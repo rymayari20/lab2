@@ -16,9 +16,3 @@ Un outil Python pour analyser les offres d'emploi du fil "Who is hiring?" sur Ha
 - Requests
 - Matplotlib
 
-## Installation
-
-1. Cloner le dépôt :
-```bash
-git clone https://github.com/rymayari20/lab2
-cd hacker-news-scraper

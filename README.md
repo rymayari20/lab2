@@ -22,18 +22,15 @@ Un backend simple et efficace pour applications de quiz, construit avec :
 
 # Installation
 
-1. **Clone the repository**
-   git clone https://github.com/rymayari20/lab2.git
-   cd quiz-app
 
-2. **Set up virtual environment**
+1. **Set up virtual environment**
 py -m venv myenv
 .\myenv\Scripts\activate
 
-3. **Install dependencies**
+2. **Install dependencies**
 pip install fastapi sqlalchemy psycopg2-binary uvicorn
 
-4. **Database setup**
+3. **Database setup**
 
 # Encodage sécurisé des paramètres
 username = quote_plus("postgres")
@@ -44,5 +41,5 @@ Create a PostgreSQL database named quizApp
 Update connection string in database.py:
 URL_DATABASE = f"postgresql://{username}:{password}@{host}:5433/{dbname}"
 
-5. **Running the Application**
+4. **Running the Application**
 uvicorn main:app --reload
