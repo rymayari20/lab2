@@ -34,9 +34,15 @@ py -m venv myenv
 pip install fastapi sqlalchemy psycopg2-binary uvicorn
 
 4. **Database setup**
+
+# Encodage sécurisé des paramètres
+username = quote_plus("postgres")
+password = quote_plus("rym")
+host = quote_plus("localhost")
+dbname = quote_plus("quizapp")
 Create a PostgreSQL database named quizApp
 Update connection string in database.py:
-URL_DATABASE = 'postgresql://username:password@localhost:5432/quizApp'
+URL_DATABASE = f"postgresql://{username}:{password}@{host}:5433/{dbname}"
 
 5. **Running the Application**
 uvicorn main:app --reload
