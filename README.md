@@ -23,7 +23,7 @@ Un backend simple et efficace pour applications de quiz, construit avec :
 # Installation
 
 1. **Clone the repository**
-   git clone https://github.com/yourusername/quiz-app.git
+   git clone https://github.com/rymayari20/lab2.git
    cd quiz-app
 
 2. **Set up virtual environment**
